@@ -11,6 +11,6 @@ module.exports = {
     github: 'https://github.com/zakirsajib',
     linkedin: 'https://www.linkedin.com/in/zakirsajib/',
   },
-  pathPrefix: '/zs_blog',
-  siteUrl: 'https://github.com/zakirsajib/zs_blog',
+  pathPrefix: '/zs_blog_netlify',
+  siteUrl: 'https://github.com/zakirsajib/zs_blog_netlify',
 };
