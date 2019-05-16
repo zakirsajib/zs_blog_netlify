@@ -1,16 +1,15 @@
 module.exports = {
-  title: 'Dev Blog', // Required
-  author: 'Ryan Fitzgerald', // Required
+  title: 'Zakir Blog', // Required
+  author: 'Zakir Sajib', // Required
   description: 'Full-stack Web Developer',
-  primaryColor: '#3498db', // Required
+  primaryColor: '#c80a48', // Required
   showHeaderImage: true,
   showShareButtons: true,
   postsPerPage: 5, // Required
   social: {
-    website: 'https://ryanfitzgerald.ca',
-    github: 'https://github.com/ryanfitzgerald',
-    twitter: 'https://twitter.com/ryanafitzgerald',
-    linkedin: 'https://ca.linkedin.com/in/ryanafitzgerald',
+    website: 'https://zakirsajib.netlify.com/',
+    github: 'https://github.com/zakirsajib',
+    linkedin: 'https://www.linkedin.com/in/zakirsajib/',
   },
   pathPrefix: '/zs_blog',
   siteUrl: 'https://github.com/zakirsajib/zs_blog',
