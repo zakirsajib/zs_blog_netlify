@@ -4,7 +4,7 @@ DevBlog is a fully customizable blog template designed for developers (or anyone
 
 To view a live demo, [click here](https://ryanfitzgerald.github.io/devblog/).
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/RyanFitzgerald/devblog)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zakirsajib/zs_blog)
 
 ## Features
 * Fully responsive
