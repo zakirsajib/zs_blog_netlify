@@ -7,6 +7,7 @@ const H1 = styled.h1`
   margin: 0;
   padding: 0 30px;
   text-align: center;
+  text-transform: capitalize;
 `;
 
 export default H1;

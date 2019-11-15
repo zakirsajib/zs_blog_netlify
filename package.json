@@ -1,10 +1,10 @@
 {
-  "name": "devblog",
+  "name": "zsblog",
   "description": "GatsbyJS blog template for developers",
   "version": "2.0.0",
-  "author": "Ryan Fitzgerald <ryanfitzgeralddev@gmail.com>",
+  "author": "Zakir Sajib <zakirsajib@gmail.com>",
   "bugs": {
-    "url": "https://github.com/ryanfitzgerald/devblog/issues"
+    "url": "https://github.com/zakirsajib/zs_blog_netlify/issues"
   },
   "dependencies": {
     "gatsby": "^2.0.31",
@@ -38,7 +38,7 @@
     "gh-pages": "^1.1.0",
     "prettier": "^1.12.0"
   },
-  "homepage": "https://github.com/ryanfitzgerald/devblog#readme",
+  "homepage": "https://github.com/zakirsajib/zs_blog_netlify#readme",
   "keywords": [
     "gatsby",
     "dev",
@@ -49,7 +49,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryanfitzgerald/devblog.git"
+    "url": "git+https://github.com/zakirsajib/zs_blog_netlify.git"
   },
   "scripts": {
     "dev": "gatsby develop",

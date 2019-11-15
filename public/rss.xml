@@ -1,8 +1,76 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Zakir Blog]]></title><description><![CDATA[Full-stack Web Developer]]></description><link>https://github.com/zakirsajib/zs_blog_netlify</link><generator>RSS for Node</generator><lastBuildDate>Thu, 16 May 2019 11:47:00 GMT</lastBuildDate><item><title><![CDATA[PHP Interview questions & Answers]]></title><description><![CDATA[
-There are few PHP related questions for interview.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Zakir Blog]]></title><description><![CDATA[Full-stack Web Developer]]></description><link>https://github.com/zakirsajib/zs_blog_netlify</link><generator>RSS for Node</generator><lastBuildDate>Fri, 15 Nov 2019 14:03:49 GMT</lastBuildDate><item><title><![CDATA[Fix mysql installation in your Mac OSX EL Eapitan 10.11.16]]></title><description><![CDATA[
+Few weeks ago I messed up with mysql 5.5 that was preinstalled in el capitan system. I wanted to install latest version of mysql but I realized I won't be able to install latest or even recent version as I have older version of mac; late 2008 model ! Then I searched through mysql website and found a wrong version ~~mysql-5.7.26-osx10.14-x86_64~~ which is for mac osx 10.14.XX. After I installed that version, mysql didn't startup and I had to go through lots of shits process and eventually deleted all my databases! *Error keep coming : PID is not found and mysql.socket is not found* type error. I gave up for 2 weeks. Today I again sit down and installed correct version [mysql-5.7.16-osx10.11-x86_64](https://downloads.mysql.com/archives/community/) of mysql for my osx version 10.11.16. And again it works nicely. 
 
-]]></description><link>https://github.com/zakirsajib/zs_blog_netlify/php-interview-questions-answers/</link><guid isPermaLink="false">https://github.com/zakirsajib/zs_blog_netlify/php-interview-questions-answers/</guid><pubDate>Thu, 16 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;There are few PHP related questions for interview.&lt;/p&gt;
-&lt;!-- end --&gt;</content:encoded></item><item><title><![CDATA[Welcome to the Blog!]]></title><description><![CDATA[
+]]></description><link>https://github.com/zakirsajib/zs_blog_netlify/fix-mysql-installation-in mac-osx-el-capitan/</link><guid isPermaLink="false">https://github.com/zakirsajib/zs_blog_netlify/fix-mysql-installation-in mac-osx-el-capitan/</guid><pubDate>Fri, 31 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Few weeks ago I messed up with mysql 5.5 that was preinstalled in el capitan system. I wanted to install latest version of mysql but I realized I won’t be able to install latest or even recent version as I have older version of mac; late 2008 model ! Then I searched through mysql website and found a wrong version &lt;del&gt;mysql-5.7.26-osx10.14-x86_64&lt;/del&gt; which is for mac osx 10.14.XX. After I installed that version, mysql didn’t startup and I had to go through lots of shits process and eventually deleted all my databases! &lt;em&gt;Error keep coming : PID is not found and mysql.socket is not found&lt;/em&gt; type error. I gave up for 2 weeks. Today I again sit down and installed correct version &lt;a href=&quot;https://downloads.mysql.com/archives/community/&quot;&gt;mysql-5.7.16-osx10.11-x86_64&lt;/a&gt; of mysql for my osx version 10.11.16. And again it works nicely. &lt;/p&gt;
+&lt;!-- end --&gt;
+&lt;p&gt;&lt;strong&gt;What I realized is correct version of mysql is important for your OS. After install the correct version, you need to login to mysql via terminal. You need to reset your old/temporary mysql password and create new password!&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;Old/temporary password was created by mysql while it was installing. So keep a note of that password. &lt;/p&gt;
+&lt;p&gt;Let’s login to mysql server.&lt;/p&gt;
+&lt;p&gt;So this is how it goes: &lt;/p&gt;
+&lt;p&gt;In terminal, type:&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;mysql -u root -p&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;It will ask your old/temporary password. Type it. It will show following message in terminal.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Welcome to the MySQL monitor.  Commands end with ; or \g.&lt;/code&gt;
+&lt;code class=&quot;language-text&quot;&gt;Your MySQL connection id is 18&lt;/code&gt;
+&lt;code class=&quot;language-text&quot;&gt;Server version: 5.7.16&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Copyright (c) 2000, 2016, Oracle and/or its affiliates. All rights reserved.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Type &amp;#39;help;&amp;#39; or &amp;#39;\h&amp;#39; for help. Type &amp;#39;\c&amp;#39; to clear the current input statement.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Now change old password to a new password. Type:&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;SET PASSWORD = PASSWORD(&amp;#39;your_new_password&amp;#39;);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;It will output something like this:&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Query OK, 0 rows affected, 1 warning (0.00 sec)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Now you can see your existing databases by typing:&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;show databases;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You can now create a new database using mysql command or you can use GUI app like &lt;strong&gt;SequelPro&lt;/strong&gt; for mac.&lt;/p&gt;
+&lt;p&gt;While logging to SequelPro, you need to enter your login details of mysql server.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Username: root&lt;/code&gt;
+&lt;code class=&quot;language-text&quot;&gt;Password: your_new_password&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;and then click connect button.&lt;/p&gt;
+&lt;p&gt;It will connect and you can see existing databases and create a new database easily.&lt;/p&gt;
+&lt;p&gt;Thats it. Hope it helps someone who was struggling :)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Difference between Session and Cookies in PHP]]></title><description><![CDATA[
+What are the difference between Session and Cookies in PHP?
+
+]]></description><link>https://github.com/zakirsajib/zs_blog_netlify/session-vs-cookies/</link><guid isPermaLink="false">https://github.com/zakirsajib/zs_blog_netlify/session-vs-cookies/</guid><pubDate>Mon, 20 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;What are the difference between Session and Cookies in PHP?&lt;/p&gt;
+&lt;!-- end --&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Session&lt;/th&gt;
+&lt;th&gt;Cookies&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Data are stored on server.&lt;/td&gt;
+&lt;td&gt;Cookies Data are stored on client side or user’s browser.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Session data are more secured as they never travel on every HTTP request.&lt;/td&gt;
+&lt;td&gt;Cookies data are less secured as they are travel with each and every HTTP request.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</content:encoded></item><item><title><![CDATA[PHP Interview questions & Answers]]></title><description><![CDATA[
+These are few PHP related questions for interview (beginner level).
+
+]]></description><link>https://github.com/zakirsajib/zs_blog_netlify/php-interview-questions-answers/</link><guid isPermaLink="false">https://github.com/zakirsajib/zs_blog_netlify/php-interview-questions-answers/</guid><pubDate>Thu, 16 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;These are few PHP related questions for interview (beginner level).&lt;/p&gt;
+&lt;!-- end --&gt;
+&lt;h3&gt;What is juggling in PHP?&lt;/h3&gt;
+&lt;p&gt;Type Juggling means dealing with a variable type. In PHP a variables type is determined by the context in which it is used. If an integer value is assigned to a variable, it becomes an integer.&lt;/p&gt;
+&lt;h3&gt;Difference between === and == in PHP ?&lt;/h3&gt;
+&lt;h3&gt;Difference between $ and $$ in PHP ?&lt;/h3&gt;
+&lt;h3&gt;Difference between include vs require&lt;/h3&gt;
+&lt;h3&gt;Difference between session vs cookie&lt;/h3&gt;</content:encoded></item><item><title><![CDATA[Welcome to the Blog!]]></title><description><![CDATA[
 Welcome to the new blog, I hope you enjoy your stay! This is an example of how you can control what excerpt shows up.
 
 ]]></description><link>https://github.com/zakirsajib/zs_blog_netlify/welcome-to-the-blog/</link><guid isPermaLink="false">https://github.com/zakirsajib/zs_blog_netlify/welcome-to-the-blog/</guid><pubDate>Sun, 01 Jul 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Welcome to the new blog, I hope you enjoy your stay! This is an example of how you can control what excerpt shows up.&lt;/p&gt;
