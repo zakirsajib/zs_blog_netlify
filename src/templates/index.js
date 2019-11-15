@@ -25,6 +25,7 @@ const IndexPage = ({ pageContext }) => {
             name="description"
             content={`${userConfig.title} | ${userConfig.description}`}
           />
+          <meta name="google-site-verification" content="MGH2iJ6T5_R_hxmCHeikDehPlc7Ttn6eL_v-Owv0718" />
         </Helmet>
         {group.map(({ node }) => (
           <Card key={node.fields.slug}>

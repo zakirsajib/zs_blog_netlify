@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Zakir Blog', // Required
   author: 'Zakir Sajib', // Required
-  description: 'Full-stack Web Developer',
+  description: 'Full Stack Web Developer',
   primaryColor: '#c80a48', // Required
   showHeaderImage: true,
   showShareButtons: true,
