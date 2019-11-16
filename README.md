@@ -52,7 +52,7 @@ Basic configuration can be done via the ```config.js``` file in the root of the 
 export default {
   title: 'Zakir Blog', // Required
   author: 'Zakir Sajib', // Required
-  description: 'Full-stack Web Developer',
+  description: 'Full Stack Web Developer',
   primaryColor: '#c80a48', // Required
   showHeaderImage: true,
   showShareButtons: true,

@@ -4,6 +4,7 @@ import userConfig from '../../../config';
 const Article = styled.article`
   color: #65738c;
   font-size: 16px;
+  margin: 0 50px;
 
   a {
     color: ${userConfig.primaryColor};
@@ -56,7 +57,7 @@ const Article = styled.article`
 
   p {
     line-height: 1.7;
-    margin: 15px 50px;
+    margin: 15px 0;
   }
 
   blockquote {
@@ -90,6 +91,20 @@ const Article = styled.article`
 
   img {
     margin: 15px 0;
+  }
+  table {border-collapse: collapse;}
+  table, th, td {border: 1px solid #ddd;}
+  th, td {
+  	padding: 15px;
+  	text-align: left;
+  }
+  th, td {
+  	border-bottom: 1px solid #ddd;
+  }
+  tr:nth-child(even) {background-color: #f2f2f2;}
+  th {
+  	background-color: #4CAF50;
+  	color: white;
   }
 `;
 

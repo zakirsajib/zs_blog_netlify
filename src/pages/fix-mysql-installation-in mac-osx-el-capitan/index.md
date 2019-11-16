@@ -1,11 +1,14 @@
 ---
 title: Fix mysql installation in your Mac OSX EL Eapitan 10.11.16
 date: "2019-05-31"
+featuredImage: './caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg'
 ---
 
-Few weeks ago I messed up with mysql 5.5 that was preinstalled in el capitan system. I wanted to install latest version of mysql but I realized I won't be able to install latest or even recent version as I have older version of mac; late 2008 model ! Then I searched through mysql website and found a wrong version ~~mysql-5.7.26-osx10.14-x86_64~~ which is for mac osx 10.14.XX. After I installed that version, mysql didn't startup and I had to go through lots of shits process and eventually deleted all my databases! *Error keep coming : PID is not found and mysql.socket is not found* type error. I gave up for 2 weeks. Today I again sit down and installed correct version [mysql-5.7.16-osx10.11-x86_64](https://downloads.mysql.com/archives/community/) of mysql for my osx version 10.11.16. And again it works nicely. 
+Few weeks ago I messed up with mysql 5.5 that was preinstalled in el capitan system. I wanted to install latest version of mysql but I realized I won't be able to install latest or even recent version as I have older version of mac; late 2008 model ! Then I searched through mysql website and found a wrong version ~~mysql-5.7.26-osx10.14-x86_64~~ which is for mac osx 10.14.XX. 
 
 <!-- end -->
+
+After I installed that version, mysql didn't startup and I had to go through lots of shits process and eventually deleted all my databases! *Error keep coming : PID is not found and mysql.socket is not found* type error. I gave up for 2 weeks. Today I again sit down and installed correct version [mysql-5.7.16-osx10.11-x86_64](https://downloads.mysql.com/archives/community/) of mysql for my osx version 10.11.16. And again it works nicely.
 
 **What I realized is correct version of mysql is important for your OS. After install the correct version, you need to login to mysql via terminal. You need to reset your old/temporary mysql password and create new password!** 
 

@@ -4,8 +4,8 @@ import styledNormalize from "styled-normalize";
 const GlobalStyle = createGlobalStyle`
   ${styledNormalize}
   
-  @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
-  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800");
+  @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500");
+  @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700");
   
   *,
   *:before,
@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background: #f9fafc;
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Ubuntu', sans-serif; 
     line-height: 1.5;
     padding: 50px 0;
     -webkit-font-smoothing: antialiased;
@@ -32,6 +32,8 @@ const GlobalStyle = createGlobalStyle`
   img {
     max-width: 100%;
   }
+  
+  h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif;}
 
   .gatsby-highlight {
     border-bottom: 1px solid #e0e6ed;

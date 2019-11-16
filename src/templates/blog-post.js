@@ -14,6 +14,7 @@ import Card from '../components/Card';
 import Container from '../components/Container';
 import FeaturedImage from '../components/FeaturedImage';
 import PageNav from '../components/PageNav';
+import Footer from '../components/Footer';
 import Share from '../components/Share';
 
 class BlogPostTemplate extends React.Component {
@@ -71,6 +72,7 @@ class BlogPostTemplate extends React.Component {
               </Button>
             )}
           </PageNav>
+          <Footer><p>© 2019 Zakir Sajib. All Rights Reserved.</p></Footer>
         </Container>
       </Layout>
     );

@@ -1,5 +1,5 @@
 ---
-title: PHP Interview questions & Answers
+title: PHP interview questions & answers
 date: "2019-05-16"
 featuredImage: './php-illustration.png'
 ---

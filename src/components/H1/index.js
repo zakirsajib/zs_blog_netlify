@@ -2,11 +2,10 @@ import styled from 'styled-components';
 
 const H1 = styled.h1`
   color: #3e465b;
-  font-size: 35px;
-  line-height: 1.5;
+  font-size: 30px;
+  line-height: 1.2;
   margin: 0;
-  padding: 0 30px;
-  text-align: center;
+  padding: 0 0 20px;
   text-transform: capitalize;
 `;
 

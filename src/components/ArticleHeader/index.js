@@ -6,14 +6,14 @@ const PostHeader = styled.div`
     font-size: 35px;
     line-height: 1.5;
     margin: 0;
-    padding: 0 30px;
+    padding: 30px;
     text-align: center;
   }
 
   p {
     color: #666d71;
     display: block;
-    font-size: 1.6em;
+    font-size: 1.3em;
     margin: 0;
     text-align: center;
   }
@@ -21,7 +21,7 @@ const PostHeader = styled.div`
   span {
     background: #9c9da3;
     display: block;
-    margin: 50px auto;
+    margin: 20px auto 50px;
     height: 1px;
     width: 150px;
   }

@@ -13,6 +13,7 @@ export default class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
+          <meta name="google-site-verification" content="MGH2iJ6T5_R_hxmCHeikDehPlc7Ttn6eL_v-Owv0718" />
           {this.props.headComponents}
           <link rel="shortcut icon" href={favicon} />
         </head>
